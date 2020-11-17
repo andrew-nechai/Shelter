@@ -1,0 +1,57 @@
+.logo__title_pet {
+    color: $color-dark-l;
+}
+
+.logo__subtitle_pet h1 {
+    color: $color-dark-3xl;
+}
+
+.list__link_active_pet {
+    color: $color-dark-3xl;
+}
+
+.list__link_disabled_pet {
+    color: $color-dark-l;
+}
+
+.toolbtn {
+    width: 52px;
+    height: 52px;
+    margin-top: 1px;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.toolbtn__disabled {
+    border: 2px solid $color-dark-s;
+}
+
+// .toolbtn:hover {
+//     background-color: $color-primary;
+//     color: $color-dark-3xl;
+// }
+
+.toolbtn__disabled:hover {
+    border: 2px solid $color-primary;
+    background-color: $color-light-l;
+}
+
+.toolbar__number {
+    background-color: $color-primary;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+.ourfriends__toolbar {
+    padding-top: 28px;
+    display: flex;
+    justify-content: center;
+}

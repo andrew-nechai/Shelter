@@ -1,0 +1,34 @@
+.aboutshelter-wrapper {
+    justify-content: center;
+    display: flex;
+}
+
+.aboutshelter {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.aboutshelter__img {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutshelter__img {
+    & img {
+        margin-right: 7.7vw;
+    }
+}
+
+.about-description__title {
+    max-width: 370px;
+    margin-top: 14px;
+    h3 {
+        @include h3;
+    }
+}
+
+.about-description__description {
+    max-width: 430px;
+    margin-top: 25px;
+    @include paragraph-l;
+}

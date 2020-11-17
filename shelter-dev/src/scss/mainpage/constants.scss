@@ -1,0 +1,91 @@
+$color-primary: #F1CDB3;
+$color-text-disabled: #CDCDCD;
+
+$color-light-s: #fafafa;
+$color-light-l: #f6f6f6;
+$color-light-lx: #fff;
+
+$color-dark-s: #cdcdcd;
+$color-dark-m:  #b2b2b2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+
+@mixin h3 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 3.5rem;
+    }
+    line-height: 130%;
+    color: $color-dark-l;   
+    letter-spacing: 0.21rem;
+}
+
+@mixin h3-light {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 2.5rem;
+    }
+    text-align: center;
+    line-height: 130%;
+    color: $color-dark-l;   
+    letter-spacing: 0.06em;
+}
+
+@mixin h4 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 20px;
+    }
+    
+    line-height: 115%;
+    letter-spacing: 0.21rem;
+
+    color: #C4C4C4;
+}
+
+@mixin h5 {
+    
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 15px;
+    }
+
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+}
+
+@mixin paragraph-l {
+    font: {
+        family: Arial;
+        style: normal;
+        weight: normal;
+        size: 15px;
+    }
+
+    line-height: 160%;
+    color: #C4C4C4;
+}
+
+@mixin paragraph-s {
+    font: {
+        family: Arial;
+        style: italic;
+        weight: normal;
+        size: 12px;
+    }
+
+    line-height: 150%;
+    /* or 24px */
+    color: #C4C4C4;
+}

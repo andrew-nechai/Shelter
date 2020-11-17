@@ -1,0 +1,178 @@
+.friends {
+    background-color: $color-light-l;
+}
+
+.friends-wrapper {
+    padding: 80px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends__button {
+    margin-top: 60px;
+    margin-left: 2px;
+    width: 262px;
+}
+
+.btn-link {
+    text-decoration: none;
+    border: none;
+}
+
+.section__title {
+    @include h3;
+}
+
+.friends__title {
+    max-width: 400px;
+    text-align: center;
+}
+
+.slide {
+    cursor: pointer;
+}
+
+.slide:hover {
+    box-shadow: 0 0px 1px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.slider__btn {
+    width: 52px;
+    height: 52px;
+    margin-top: 1px;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+}
+
+.slider__btn:hover {
+    background-color: $color-primary;
+}
+
+.slider__btn-right {
+    flex-shrink: 0;
+    & img {
+        transform: rotate(180deg);
+    }
+}
+
+.slider__btn-left {
+    flex-shrink: 0;
+}
+
+.slider {
+    display: flex;
+    padding-top: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__slides {
+    z-index: 3;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 47.5rem;
+    margin-bottom: -40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    max-width: 990px;
+    overflow: hidden;
+}
+
+.slide {
+    background-color: $color-light-s;
+    border-radius: 9px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.slide__title {
+    margin-top: 29.5px;
+    margin-left: 2.5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+}
+
+.slide__button {
+    background-color: $color-light-s;
+    border: 2px solid $color-primary;
+    padding: 13px 42px;
+    border-radius: 100px;
+    margin-top: 31px;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+}
+
+.slide__button:hover {
+    background-color: $color-primary;
+}
+
+@keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.slides {
+    animation: .5s ease-in-out;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 990px;
+}
+
+.active,
+.next {
+  display: flex;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}

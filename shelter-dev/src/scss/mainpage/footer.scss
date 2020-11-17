@@ -1,0 +1,43 @@
+.footer {
+    padding-top: 40px;
+    background: url(/assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__title {
+    margin-top: 17px;
+    max-width: 279px;
+    color: #fff;
+}
+
+.footer__links-block {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    & a{
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: $color-primary;
+    }
+}
+
+.footer__link-block {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footer__location-link {
+    max-width: 260px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links-block2 {
+    margin-top: 33px;
+}

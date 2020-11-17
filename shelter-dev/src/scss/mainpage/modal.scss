@@ -1,0 +1,166 @@
+.slider__btn_hovered:hover {
+    background-color: $color-primary;
+}
+
+.slider__btn_hovered {
+    cursor: pointer;
+}
+
+.modal-window_w {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window__black-bg {
+    animation: 0.5s ease-in-out;
+    opacity: 0.6;
+    position: absolute;
+    background-color: #292929;
+    width: 100vw;
+    height: 100vh;
+    z-index: 70;
+    transition: opacity .5s;
+}
+
+// .modal-window__black-bg_active {
+//     anima
+//     opacity: 0.6;
+//     pointer-events: unset;
+// }
+
+.modal-window {
+    animation: 0.5s ease-in-out;
+    z-index: 100;
+    position: relative;
+}
+
+.modal-window__wrapper {
+    background-color: #fff;
+    max-width: 900px;
+    display: flex;
+    height: 500px;
+    border-radius: 9px;
+}
+
+.modal-window__pet-wrap {
+    width: 500px;
+    & img {
+        border-radius: 9px;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.modal-window__description{
+    padding: 50px 20px 88px 29px;
+}
+
+.modal-window__title {
+    @include h3;
+}
+
+.modal-window__subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.0001em;
+    color: black;
+}
+
+.modal-window__addinfo {
+    margin-top: 42px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+.modal-window__list-wrap {
+    padding-left: 14px;
+    margin-top: 34px;
+    li {
+
+        line-height: 175%;
+    }
+}
+
+.modal-window__listitem span:nth-child(1) {
+    color: black;
+    font-weight: bold;
+}
+
+.modal-window__listitem span:nth-child(2) {
+    color: black;
+}
+
+.modal-window__list{
+    color: $color-primary;
+}
+
+.cross-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 900px;
+}
+
+.btn-cross {
+    transform: translate(80%);
+}
+
+@keyframes top {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0%;
+    }
+  }
+
+  @keyframes bottom {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -100%;
+    }
+  }
+
+
+  @keyframes opacityOn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.6;
+    }
+  }
+
+  @keyframes opacityOff {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+  .to-opacityOn {
+    animation-name: opacityOn;
+  }
+  
+.to-opacityOff {
+    animation-name: opacityOff;
+}
+
+.from-top {
+    animation-name: bottom;
+}
+
+.to-top {
+    animation-name: top;
+}
